@@ -1,6 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ff3f34;
 }
 
@@ -8,4 +9,9 @@
     height:40px;
     object-fit: contain; /*this preserves aspect ratio while maintaining the given size.*/
     width: 60px;
+}
+
+.header-icon{
+    padding: 20px;
+    color: #ff3f34;
 }
