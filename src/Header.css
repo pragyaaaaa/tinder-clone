@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ff3f34;
+}
+
+.header-logo{
+    height:40px;
+    object-fit: contain; /*this preserves aspect ratio while maintaining the given size.*/
+    width: 60px;
+}
