@@ -4,6 +4,7 @@ import Header from './Header';
 import Chats from './Chats'
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
+import ChatScreen from './ChatScreen';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,22 +18,28 @@ function App() {
       <Router>
 
         <Switch>
+        <Route path="/chat/:crush">
+            {/* header */}
+            <Header backButton="/chat" />
+            <ChatScreen/>
+          </Route>
           <Route path="/chat">
             {/* header */}
             <Header backButton="/" />
             <Chats/>
-            <h1>I'm chat page.</h1>
           </Route>
           {/* default route page should always be at the bottom */}
           <Route path="/">
             {/* header */}
             <Header />
+             {/* tinder cards */}
             <TinderCards />
+             {/* buttons below tinder cards */}
             <SwipeButtons />
           </Route>
         </Switch>
-        {/* tinder cards */}
-        {/* buttons below tinder cards */}
+       
+       
         {/* chat screen */}
         {/* individual chat screen */}
       </Router>
