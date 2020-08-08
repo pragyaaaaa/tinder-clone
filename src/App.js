@@ -12,16 +12,20 @@ import {
 function App() {
   return (
     <div className="App">
-      {/* header */}
-      <Header />
+
       <Router>
+
         <Switch>
           <Route path="/chat">
+            {/* header */}
+            <Header backButton="/" />
             <h1>I'm chat page.</h1>
           </Route>
           {/* default route page should always be at the bottom */}
           <Route path="/">
-            <TinderCards/>
+            {/* header */}
+            <Header />
+            <TinderCards />
             <SwipeButtons />
           </Route>
         </Switch>
