@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
+import Chats from './Chats'
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
 import {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/chat">
             {/* header */}
             <Header backButton="/" />
+            <Chats/>
             <h1>I'm chat page.</h1>
           </Route>
           {/* default route page should always be at the bottom */}
