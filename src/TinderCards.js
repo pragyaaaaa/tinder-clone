@@ -24,7 +24,6 @@ function TinderCards() {
     }, []);
     return (
         <div>
-            <h1>I'm Pragya.</h1>
             <div className="tinderCards-container">
                 {crush.map(crush => (
                     <TinderCard
