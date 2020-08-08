@@ -4,3 +4,6 @@ It's a fun project to learn:
   2. How to use Material UI?
   4. How to break down UI into components and write modular code (well, that's what react is all about)?
   5. How to use React router to navigate to pages?
+  6. How to deploy react project using firebase hosting?
+
+  Hosting URL: https://tinder-clone-2b55e.web.app/
